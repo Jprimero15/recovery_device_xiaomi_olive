@@ -22,7 +22,7 @@
 	export ALLOW_MISSING_DEPENDENCIES=true
 
         # Device Tree Path | Include Path
-        export DEVICE_PATH="device/xiaomi/olive"
+        export DEVICE_PATH="device/xiaomi/olivelite"
         export INCLUDE_PATH="$DEVICE_PATH/include"
 
 	export OF_KEEP_FORCED_ENCRYPTION=1

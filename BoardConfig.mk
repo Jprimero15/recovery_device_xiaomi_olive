@@ -162,7 +162,7 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_DEVICE_VERSION=$(shell date '+%Y%m%d')
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := olive
+TARGET_OTA_ASSERT_DEVICE := olivelite
 
 # TWRP Debug Flags
 TARGET_USES_LOGD := true

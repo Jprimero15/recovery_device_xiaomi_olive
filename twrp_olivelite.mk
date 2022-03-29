@@ -43,7 +43,7 @@ BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(valu
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := $(BOARD_VENDOR)
-PRODUCT_MODEL := Redmi 8
+PRODUCT_MODEL := Redmi 8A
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
 # Inherit from hardware-specific part of the product configuration
