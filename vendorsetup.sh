@@ -22,11 +22,11 @@
 	export ALLOW_MISSING_DEPENDENCIES=true
 
         # Device Tree Path | Include Path
-        export DEVICE_PATH="device/xiaomi/olive"
+        export DEVICE_PATH="device/xiaomi/mi439"
         export INCLUDE_PATH="$DEVICE_PATH/include"
 
-	export TARGET_DEVICE_ALT="olive,olivelite,olivewood"
-	export OF_TARGET_DEVICES="olive,olivelite,olivewood"
+	export TARGET_DEVICE_ALT="mi439,olive,olives,olivelite,olivewood,pine"
+	export OF_TARGET_DEVICES="mi439,olive,olives,olivelite,olivewood,pine"
 	export OF_KEEP_FORCED_ENCRYPTION=1
 	export OF_PATCH_AVB20=1
 	export OF_USE_MAGISKBOOT=1
