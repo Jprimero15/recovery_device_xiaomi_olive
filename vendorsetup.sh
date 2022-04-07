@@ -25,6 +25,8 @@
         export DEVICE_PATH="device/xiaomi/olive"
         export INCLUDE_PATH="$DEVICE_PATH/include"
 
+	export TARGET_DEVICE_ALT="olive,olivelite,olivewood"
+	export OF_TARGET_DEVICES="olive,olivelite,olivewood"
 	export OF_KEEP_FORCED_ENCRYPTION=1
 	export OF_PATCH_AVB20=1
 	export OF_USE_MAGISKBOOT=1
