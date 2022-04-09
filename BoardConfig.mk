@@ -68,9 +68,11 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.usbconfigfs=true \
     console=ttyMSM0,115200,n8 \
     earlycon=msm_serial_dm,0x78B0000 \
+    ehci-hcd.park=3 \
+    firmware_class.path=/vendor/firmware_mnt/image \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
-    msm_rtb.filter=0x237 ehci-hcd.park=3
+    msm_rtb.filter=0x237
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
