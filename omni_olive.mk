@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2017 The Android Open Source Project
-# Copyright (C) 2022 OrangeFox Recovery Project
+# Copyright (C) 2022 The OrangeFox Recovery Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,8 +14,18 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_olive.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-COMMON_LUNCH_CHOICES := \
-	omni_olive-eng
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit from olive device
+$(call inherit-product, device/xiaomi/olive/device.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := omni_olive
+PRODUCT_DEVICE := olive
+PRODUCT_MODEL := Redmi 8
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi

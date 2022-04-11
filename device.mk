@@ -14,13 +14,7 @@
 # limitations under the License.
 #
 
-# Inherit from common AOSP config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
-# Dependecies
-PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+LOCAL_PATH := device/xiaomi/olive
 
 # Qcom decryption
 PRODUCT_PACKAGES += \
@@ -29,4 +23,4 @@ PRODUCT_PACKAGES += \
 
 # OEM otacerts
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/miui
+    $(LOCAL_PATH)/security/miui
