@@ -52,3 +52,4 @@ export FOX_VERSION="R11.1_3.1"
 export FOX_BUILD_TYPE="Unofficial"
 export OF_MAINTAINER="Jprimero15"
 export OF_MAINTAINER_AVATAR="device/xiaomi/olive/include/Jprimero15.png"
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v24.3.zip
